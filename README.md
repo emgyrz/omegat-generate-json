@@ -8,7 +8,7 @@ Just copy `generate_json.js` to OmegaT script directory (e.g., `~/.local/share/O
 
 ## Data fields
 
-Fields were taken from the following classes.
+Fields are taken from the following classes.
 
 * [FileInfo](https://omegat.sourceforge.io/javadoc-standard/org/omegat/core/data/IProject.FileInfo.html)
 * [SourceTextEntry](https://omegat.sourceforge.io/javadoc-standard/org/omegat/core/data/SourceTextEntry.html)

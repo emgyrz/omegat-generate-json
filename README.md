@@ -1,14 +1,16 @@
 # OmegaT script for generating project data in JSON format
 
-## Install 
+## How to use 
 
-Just copy `generate_json.js` to OmegaT script directory (e.g., `~/.local/share/OmegaT/script` on Linux).
+Just copy `generate_json.js` to the OmegaT script directory (e.g., `~/.local/share/OmegaT/script` on Linux).
 [Read docs about it here](https://omegat.readthedocs.io/en/latest/51.HowToWriteScript.html#script-locations)
+
+Then it can be found in **Tools > Scripts** in application menu.
 
 
 ## Data fields
 
-Fields are taken from the following classes.
+Fields are extracted from the following classes.
 
 * [FileInfo](https://omegat.sourceforge.io/javadoc-standard/org/omegat/core/data/IProject.FileInfo.html)
 * [SourceTextEntry](https://omegat.sourceforge.io/javadoc-standard/org/omegat/core/data/SourceTextEntry.html)

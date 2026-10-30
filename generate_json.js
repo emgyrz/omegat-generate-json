@@ -9,7 +9,6 @@
 var Files = Java.type('java.nio.file.Files')
 var Paths = Java.type('java.nio.file.Paths')
 var JavaStr = Java.type('java.lang.String')
-var JOptionPane = Java.type('javax.swing.JOptionPane')
 var StandardOpenOption = Java.type('java.nio.file.StandardOpenOption')
 
 
@@ -25,7 +24,7 @@ function gui() {
   }
 
   var jsonData = {
-    generatedAt: new Date().toString(),
+    generatedAt: Date.now(),
     files: []
   }
 

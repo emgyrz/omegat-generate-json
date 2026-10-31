@@ -3,13 +3,12 @@
  * 
  * @author  Maksim Zommer
  * @date    2026-10-29
- * @version 1.0
+ * @version 1.1
  */
 
 var Files = Java.type('java.nio.file.Files')
 var Paths = Java.type('java.nio.file.Paths')
 var JavaStr = Java.type('java.lang.String')
-var StandardOpenOption = Java.type('java.nio.file.StandardOpenOption')
 
 
 var RESULT_FILE_NAME = 'project-data.json'
@@ -47,8 +46,7 @@ function gui() {
 
   Files.write(
     Paths.get(prop.projectRoot, RESULT_FILE_NAME), 
-    new JavaStr(JSON.stringify(jsonData, null, 2)).getBytes(), 
-    StandardOpenOption.CREATE
+    new JavaStr(JSON.stringify(jsonData, null, 2)).getBytes()
   )
 }
 
